@@ -1,8 +1,8 @@
 /*
-*	grupo  :
-*	alumno :
-*	n.exp. :
-*	fecha  :
+*	grupo  : 1-gdam
+*	alumno : Claudia Fdez Gutiérrez
+*	n.exp. : 7236
+*	fecha  : 01/06/2022
  */
 package Cheese;
 
