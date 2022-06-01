@@ -1,4 +1,7 @@
 package Cheese;
+
+import java.util.ArrayList;
+
 /**
  * Clase para la gestión de productos lácteos
  * @author loned
@@ -125,6 +128,10 @@ public class Producto {
         System.out.println("Peso             : " + this.getPeso());
         System.out.println("Tipo de leche    : " + this.getTipo());
         System.out.println("Cantidad de leche: " + this.getCantidad_leche());
+    }
+
+    ArrayList<Producto> getProdutos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
