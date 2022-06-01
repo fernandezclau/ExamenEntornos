@@ -45,14 +45,16 @@ public class ListaProductos {
     
         if (campo.replace(" ","") == "")  return true; else return false;
     }
-
+    
     /**
      * 
      * @param prod Producto que queremos añadir
      * @return producto añadido
      */
     public Producto addProducto(Producto prod) {
-        
+        if (prod == null){
+            return null;
+        }
         if (listaP.containsKey(prod.getcode())) {
             // System.out.println("Producto con código duplicado");
             return null;
@@ -69,7 +71,9 @@ public class ListaProductos {
      */
 
     public Producto eliminarProducto(String codigo) { 
-        
+       if( check_null(codigo)){
+           return null;
+       }
         Producto prod = buscarProducto(codigo);
         if (prod != null) {
         listaP.remove(codigo);
@@ -85,8 +89,11 @@ public class ListaProductos {
      */
 
     public Producto buscarProducto(String codigo) { 
+        if( check_null(codigo)){
+           return null;
+       }
         Producto prod = null;
-        
+      
         if (!listaP.containsKey(codigo)) {
             return prod;
         }
